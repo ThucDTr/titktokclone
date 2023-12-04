@@ -1,0 +1,86 @@
+@import 'normalize.css';
+
+:root {
+    --primary: #fe2c55;
+    --balck: #333;
+    --white: #fff;
+    --text-color: #161823;
+
+    --default-layout-header-height: 60px;
+    --default-layout-header-width: 1528px;
+    --default-layout-horizontal-spacer: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'TikTokFont', sans-serif;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    text-rendering: optimizespeed;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+
+a {
+    color: var(--balck);
+    text-decoration: none;
+}
+//font embeded
+@font-face {
+    font-family: TikTokDisplay;
+    src: url('../../assests/fonts/TikTokDisplayFont-Bold.woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: TikTokFont;
+    src: url('../../assests/fonts/TikTokFont-Bold.woff2');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: TikTokFont;
+    src: url('../../assests/fonts/TikTokFont-Regular.woff2');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: TikTokFont;
+    src: url('../../assests/fonts/TikTokFont-Semibold.woff2');
+    font-weight: 600;
+}
+//custom tippy tooltip
+body {
+    .tippy-box {
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        background-color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-arrow {
+        color: rgba(84, 84, 84, 0.92);
+    }
+
+    .tippy-content {
+        padding: 8px 9px;
+    }
+
+    .tippy-box[data-placement^='bottom'] > .tippy-arrow:before {
+        top: -8px;
+    }
+}
